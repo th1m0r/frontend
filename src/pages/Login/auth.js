@@ -1,3 +1,6 @@
+
+//import ./index.css
+
 import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form'
 import { connect } from 'react-redux'
@@ -14,7 +17,9 @@ class Auth extends Component {
         login(values)
     }
 
+    
     render() {
+        /* Por enquanto aqui nao tem css pois quando coloquem o css externo, o css do admin-lte quebrou */
         const { handleSubmit } = this.props
         return (
             <div className="content">
